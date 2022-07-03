@@ -1,5 +1,5 @@
 <launch>
-    <arg name="world" default="$(find survey_simulator)/PX4-Autopilot/Tools/sitl_gazebo/worlds/empty.world" />
+    <arg name="world" default="$(find survey_simulator)/worlds/forest.world" />
     <arg name="uav_sdf" default="$(find survey_simulator)/PX4-Autopilot/Tools/sitl_gazebo/models/iris_depth_camera/iris_depth_camera.sdf" />
     
     <node pkg="survey_simulator" type="setup_sitl.sh" args="$(find survey_simulator) $(arg uav_sdf) $(arg world)" name="run_sitl" output="screen" />

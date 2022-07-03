@@ -10,4 +10,4 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${BUILD_DIR}/build_gazebo
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:${SRC_DIR}
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:${SRC_DIR}/Tools/sitl_gazebo
 
-roslaunch survey_simulator sitl_mavros.launch sdf:="${SRC_DIR}/Tools/sitl_gazebo/models/iris_depth_camera/iris_depth_camera.sdf"
+roslaunch survey_simulator sitl_mavros.launch sdf:=$2 world:=$3
