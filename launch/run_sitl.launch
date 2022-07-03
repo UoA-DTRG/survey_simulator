@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="survey_simulator" type="setup_sitl.sh" args="$(find survey_simulator)" name="run_sitl" output="screen" />
+    <!-- Fix camera_frame -->
+    <node pkg="tf2_ros" type="static_transform_publisher" args="0.1 0 0 -1.57 0 -1.57 /base_link /camera_link" name="base_to_camera_link" />
+</launch>
