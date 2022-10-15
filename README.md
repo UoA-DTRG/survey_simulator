@@ -20,7 +20,7 @@ Since MAVROS and geographiclib is not installed as part of a base ROS install
 
 ```
 sudo apt install ros-noetic-mavros ros-noetic-mavros-extras
-https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 chmod +x install_geographiclib_datasets.sh
 sudo ./install_geographiclib_datasets.sh
 rm install_geographiclib_datasets.sh
